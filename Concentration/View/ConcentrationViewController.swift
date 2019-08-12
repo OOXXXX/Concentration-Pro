@@ -33,7 +33,7 @@ class ConcentrationViewController: UIViewController {
         let label = UILabel()
         label.textColor = .black
         label.font = UIFont.systemFont(ofSize: 20, weight: .black)
-        label.text = "Flips:0"
+        label.text = "Flips: 0"
         label.textAlignment = .center
         return label
     }()
@@ -190,6 +190,9 @@ class ConcentrationViewController: UIViewController {
         game.newGame(numberOfPairsOfCards: numberOfPairsOfCards)
         emojiTheme.chooseNewRandomEmojiTheme {setThemeColors(themeColor: $0)}
         updateViewFromModel()
+        
+        let generator = UISelectionFeedbackGenerator()
+        generator.selectionChanged()
     }
 
     private func updateViewFromModel() {
