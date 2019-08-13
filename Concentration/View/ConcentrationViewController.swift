@@ -174,7 +174,7 @@ class ConcentrationViewController: UIViewController {
         view.backgroundColor = themeColor.backgroundColor
         
         let generator = UINotificationFeedbackGenerator()
-        generator.notificationOccurred(.success)
+        generator.notificationOccurred(.warning)
     }
 
     @objc func touchCard(_ sender: UIButton) {
@@ -191,8 +191,8 @@ class ConcentrationViewController: UIViewController {
         emojiTheme.chooseNewRandomEmojiTheme {setThemeColors(themeColor: $0)}
         updateViewFromModel()
         
-        let generator = UISelectionFeedbackGenerator()
-        generator.selectionChanged()
+        let generator = UIImpactFeedbackGenerator(style: .light)
+        generator.impactOccurred()
     }
 
     private func updateViewFromModel() {
