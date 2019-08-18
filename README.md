@@ -15,8 +15,6 @@ Some of the major differences of this project are:
 ## FYI
 Each iteration of this project will be its own branch so make sure to download the correct version of this project. The latest iteration will always be the master.
 
-## Contact
-If you have any questions or suggestions feel free to contact me via twitter: [@FullSTKDesign](https://twitter.com/FullSTKDesign?lang=en)
 
 ## License
 
