@@ -11,10 +11,8 @@ Some of the major differences of this project are:
 - Everything is done in code.
 - Playable in portrait orientation only.
 
-
 ## FYI
 Each iteration of this project will be its own branch so make sure to download the correct version of this project. The latest iteration will always be the master.
-
 
 ## License
 
